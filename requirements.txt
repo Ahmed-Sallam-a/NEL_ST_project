@@ -1,0 +1,11 @@
+streamlit
+pyngrok==4.1.1
+segmentation_models_pytorch
+landingai
+torch
+tifffile
+numpy
+opencv-python-headless
+scikit-learn
+matplotlib
+pillow
