@@ -88,8 +88,8 @@ def main():
     st.header("Mangrove Detection")
     uploaded_file = st.file_uploader("Choose an image...", key="2", type=["jpg", "jpeg", "png"])
     if uploaded_file is not None:
-        endpoint_id = os.getenv("LANDINGAI_ENDPOINT_ID")  # Use environment variable
-        api_key = os.getenv("LANDINGAI_API_KEY")  # Use environment variable
+        endpoint_id = "a0bc99c7-e30b-4133-8467-c0b7b0b6138e" # Use environment variable
+        api_key = "land_sk_K8LO99yCgQtBUZFqmJBvpCvzUnPDF0NAzmG5ofSFbTGLhrrRnV" # Use environment variable
         image = Image.open(uploaded_file)
         st.image(image, caption='Uploaded Image', use_column_width=True)
         predictor = Predictor(endpoint_id, api_key=api_key)
